@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    gap: 20px;
+    padding: 30px;
+}
+
+.section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: top;
+    gap: 30px;
+    padding: 20px;
+   
+}
+
+.sec1{
+    /* border: 1px solid red ; */
+    width: 100%;
+    flex: 70%;
+}
+
+.sec2{
+    /* border: 1px solid blue ; */
+    flex: 30%;
+    width: 100%;
+}
+
+.card1{
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.card2{
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.card1_content{
+    padding: 20px;
+
+}
+
+.card1_footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_button1{
+    padding: 15px 20px;
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.card_button1:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.card2_content_list{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.card2_header{
+    padding: 20px 15px;
+    background-color: whitesmoke;
+}
+
+.card2_content_list, .card2_content_list_popular1, .card2_content_list_popular2{
+    padding: 5px;
+}
+
+.card2_content_list{
+    border-bottom: 1px solid #ccc;
+}
+
+.card2_content_list:hover{
+    background-color: #ccc;
+    cursor: crosshair;
+}
+
+.card3{
+    border: 1px solid #ccc;
+}
+
+.card3_content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;    
+}
+
+.card3_body{
+    padding: 10px;
+    margin: 10px;
+
+    font-size: 12px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.footer{
+    background-color: grey;
+    padding: 30px;
+}
+
+.footer_button{
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.footer_button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+#button_dis{
+    opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+    .section{
+     display: block;   
+    }
+    .card3_content{
+       grid-template-columns:  auto auto auto auto ;    
+    } 
+}
